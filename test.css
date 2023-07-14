@@ -1,0 +1,97 @@
+/* Snippet gets rid of top margin on first element in any rich text*/
+.w-richtext>:first-child {
+	margin-top: 0;
+}
+
+/* Snippet gets rid of bottom margin on last element in any rich text*/
+.w-richtext>:last-child, .w-richtext ol li:last-child, .w-richtext ul li:last-child {
+	margin-bottom: 0;
+}
+
+/* Snippet prevents all click and hover interaction with an element */
+.is--clickable-off {
+	pointer-events: none;
+}
+
+/* Snippet enables you to add class of div-square which creates and maintains a 1:1 dimension of a div.*/
+.is--square::after {
+	content: "";
+	display: block;
+	padding-bottom: 100%;
+}
+
+/*Hide focus outline for main content element*/
+main:focus-visible {
+	outline: -webkit-focus-ring-color auto 0px;
+}
+
+/*Reset buttons, and links styles*/
+a {
+	color: inherit;
+	text-decoration: inherit;
+	font-size: inherit;
+}
+
+.w-nav-link, .is--dropdown, .brand-logo {
+color:inherit;
+}
+
+.w-nav-link:hover, .is--dropdown:hover {
+color: #7420E2;
+}
+
+.w-nav-link:pressed, .is--dropdown:pressed {
+color: #6E30F2;
+}
+
+
+/* Webkit Style reset for inputs  */  
+
+
+/* Font Smoothing */
+* {
+		-webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+	}
+
+.globe-embed iframe {
+border-width: 0!important;
+}
+
+@media screen and (min-width: 992px) {
+.cs-card:nth-child(even) {
+transform: translateY(5.5rem);
+}}
+
+.blog-cat-btn {
+font-weight: inherit;
+}
+
+@media only screen and (max-width:992px) {
+.menu-button[aria-expanded="true"] + .brand-logo  {
+color: white;
+}
+
+.brand-logo {
+color: inherit;
+}
+}
+
+.is--dropdown:hover {
+color: #47eae2;
+} 
+/* Hide scrollbar for Chrome, Safari and Opera */
+.globe::-webkit-scrollbar {
+  display: none;
+}
+
+/* Hide scrollbar for IE, Edge and Firefox */
+.globe {
+  -ms-overflow-style: none;  /* IE and Edge */
+  scrollbar-width: none;  /* Firefox */
+}
+
+@media only screen and (min-width:1600px) {
+.is--blog-bg-image-wrap {
+max-width: 99vw;
+}}
